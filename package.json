@@ -7,7 +7,9 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^5",
+    "@sap/xssec": "^3.2.12",
     "express": "^4",
+    "hdb": "^0.18.3",
     "passport": "^0.5.2"
   },
   "devDependencies": {
@@ -46,5 +48,15 @@
   },
   "sapux": [
     "app/risks"
-  ]
+  ],
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sql"
+      }
+    },
+    "hana": {
+      "deploy-format": "hdbtable"
+    }
+  }
 }
