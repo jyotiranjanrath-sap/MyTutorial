@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Gen Folder is auto generated
+gen/
+
+#mtar is built using mbt build -t ./ command
+cpapp_*.mtar

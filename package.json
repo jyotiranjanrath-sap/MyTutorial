@@ -16,6 +16,9 @@
     "@sap/ux-specification": "^1.96.2",
     "sqlite3": "^5.0.2"
   },
+  "engines": {
+    "node": "^16"
+  },
   "scripts": {
     "start": "cds run",
     "watch-risks": "cds watch --open risks/webapp/index.html#fe-lrop-v4",
@@ -53,6 +56,10 @@
     "requires": {
       "db": {
         "kind": "sql"
+      },
+      "uaa": {
+        "kind": "xsuaa",
+        "credentials": {}
       }
     },
     "hana": {
